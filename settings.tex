@@ -4,6 +4,7 @@
 \newcommand{\myName}{Tommaso Cortonesi}
 \newcommand{\myTitle}{Number Theory Revealed}
 \newcommand{\mySubTitle}{Notes and Exercises}
+\newcommand{\solution}[2]{\section[Solution #1]{Solution #1 - #2}}
 
 \DeclareRobustCommand*{\clsname}[1]{{\normalfont\sffamily#1}}
 \DeclareRobustCommand*{\pkgname}[1]{{\normalfont\sffamily#1}}
@@ -13,10 +14,13 @@
 \DeclareRobustCommand*{\classicthesis}{Classic\-Thesis}
 \DeclareRobustCommand*{\arsclassica}{{\normalfont\sffamily ArsClassica}}
 
+\newenvironment{solexe}[1]
+{\begin{trivlist} \item[] {\normalfont \bfseries Exercise #1}. } {\ensuremath{\blacksquare}\end{trivlist}}
+
 
 % ********************************************************************
 % Hyper-references
-% ******************************************************************** 
+% ********************************************************************
 \newcommand{\mail}[1]{\href{mailto:#1}{\texttt{#1}}}
 
 
