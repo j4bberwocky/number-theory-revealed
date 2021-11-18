@@ -5,6 +5,7 @@ Solutions to the exercises from [Number Theory Revealed: A Masterclass](http://w
 ## To Do
 
 - [] print contents
-- [] print bibliography
+- [X] print bibliography
 - [X] setup exercise environment
 - [] resolve warnings
+- [] numbering chapter from 0

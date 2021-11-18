@@ -2,17 +2,59 @@
 % !TEX root = ../number-theory.tex
 
 %************************************************
-\chapter{Preliminary Chapter on Induction}\label{chp:preliminary}
+%\chapter{Preliminary Chapter on Induction}\label{chp:preliminary}
 %************************************************
 
-\section{Fibonacci numbers and other recurrence sequences}
+%\section{Fibonacci numbers and other recurrence sequences}
 
-Test sulla sezione
 
 \begin{solexe}{0.1.1}
-    \lipsum[2]
+    For \( (a) \): the base step is obvious \( F_0 \in \mathbb{N} \); for the induction step,
+    we assume that \(F_{n-1}, F_{n-2} \in \mathbb{N} \), but \(\mathbb{N}\) is closed under
+    the sum so we have \(F_{n-2} + F_{n-1} \in \mathbb{N} \Rightarrow F_{n} \in \mathbb{N}\).
+    \newline
+    For \((b)\), remember that:
+    \begin{equation*}
+        \phi = \frac{1+\sqrt{5}}{2}, 1-\phi=\frac{1-\sqrt{5}}{2} \mbox{ and } \phi^2=\phi+1.
+    \end{equation*}
+
+    The base step is trivial. For the induction step we assume:
+
+    \begin{equation*}
+        \begin{aligned}
+            F_{n-2} = \frac{1}{\sqrt{5}}
+            \left(
+                \phi^{n-2} - {(1-\phi)}^{n-2}
+            \right) \\
+            F_{n-1} = \frac{1}{\sqrt{5}}
+            \left(
+                \phi^{n-1} - {(1-\phi)}^{n-1}
+            \right)
+        \end{aligned}
+    \end{equation*}
+
+    and then
+
+    \begin{equation*}
+        \begin{aligned}
+            F_{n-2} + F_{n-2} = \frac{1}{\sqrt{5}}
+            \left[
+                \phi^{n-2}-{(1-\phi)}^{n-2}+\phi\phi^{n-2}-(1-\phi){(1-\phi)}^{n-2}
+            \right] \\
+            = \frac{1}{\sqrt{5}}
+            \left[
+                \phi^{n-2}(1+\phi)-{(1-\phi)}^{n-2}(2-\phi)
+            \right] \\
+            = \frac{1}{\sqrt{5}}
+            \left(
+                \phi^n - {(1-\phi)}^n
+            \right) = F_n,
+        \end{aligned}
+    \end{equation*}
+    Because \( {(1-\phi)}^2=2-\phi \).
+
 \end{solexe}
 
 \begin{solexe}{0.1.2}
-    \lipsum[7]
+    For \( (a) \):
 \end{solexe}
